@@ -1,0 +1,13 @@
+
+This is a simple web page that features a joystick, created using HTML, CSS, and JavaScript. The joystick is made up of two elemen
+ts: a circular background with the id joystick, and a smaller circle with the id button, which can be moved around inside the joys
+tick element by clicking and dragging it.The CSS code defines the styling for the joystick and button elements. The joystick eleme
+nt has a width and height of 100px and is positioned relatively, with a border-radius of 50% to make it a circle. The button eleme
+nt has a width and height of 50px, is positioned absolutely in the center of the joystick element using the top, left, and transfo
+rm properties, and also has a border-radius of 50% to make it a circle.The JavaScript code defines event listeners for mouse event
+s on the joystick and button elements, and handles the logic for moving the button element around inside the joystick element. Whe
+n the button is clicked, the handleMouseDown function sets a flag isDragging to true, indicating that the button is being dragged.
+ When the mouse is released, the handleMouseUp function sets isDragging to false, and moves the button back to its original positi
+on. When the mouse is moved, the handleMouseMove function calculates the new position of the button based on the mouse coordinates
+ and the position of the joystick element, and sets the button element's transform property to move it to the new position. If the
+ button is moved too far from the center of the joystick, it is constrained to the edge of the joystick element.
